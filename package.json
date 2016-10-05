@@ -1,6 +1,6 @@
 {
   "name": "ng2-if-scrollbars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Angular 2 directive determines if the DOM element has scrollbars",
   "main": "index.js",
   "dependencies": {},
