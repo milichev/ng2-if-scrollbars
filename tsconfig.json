@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "declaration": true
+  },
+  "compileOnSave": false,
+  "files": [
+    "index.ts",
+    "lib/IfScrollbars.ts",
+    "lib/IfScrollbars.spec.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

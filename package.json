@@ -1,0 +1,65 @@
+{
+  "name": "ng2-if-scrollbars",
+  "version": "0.0.1",
+  "description": "The Angular 2 directive determines if the DOM element has scrollbars",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "codelyzer": "^1.0.0-beta.0",
+    "core-js": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "jasmine-expect": "^3.0.1",
+    "jasmine-jquery": "^2.1.1",
+    "jquery": "^3.1.1",
+    "karma": "^1.3.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-matchers": "^3.0.1",
+    "karma-mocha-reporter": "^2.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-webpack": "^1.8.0",
+    "lodash": "^4.16.3",
+    "phantomjs-prebuilt": "^2.1.13",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-beta.12",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2",
+    "zone.js": "^0.6.25"
+  },
+  "peerDependencies": {
+    "@angular/core": "^2.0.0",
+    "lodash": "^4.16.3"
+  },
+  "scripts": {
+    "test": "karma start --single-run",
+    "typings": "./node_modules/.bin/typings i",
+    "prepublish": "npm run typings && tsc"
+  },
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milichev/ng2-ifscrollbars.git"
+  },
+  "keywords": [
+    "angular",
+    "scrollbar",
+    "css"
+  ],
+  "author": "Vadym Milichev",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/milichev/ng2-ifscrollbars/issues"
+  },
+  "homepage": "https://github.com/milichev/ng2-ifscrollbars#readme"
+}

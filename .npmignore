@@ -1,0 +1,11 @@
+.idea
+node_modules
+typings
+npm-debug.log
+*.ts
+!*.d.ts
+*.spec.*
+lib/mockModule.*
+karma.conf.js
+tsconfig.json
+tslint.json
