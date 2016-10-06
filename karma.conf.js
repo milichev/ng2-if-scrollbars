@@ -7,11 +7,11 @@ module.exports = function (config) {
         basePath: '.',
         frameworks: ['jasmine', 'jasmine-matchers'],
         files: [
-            './lib/tests.ts',
-            './lib/**/*.spec.ts'
+            'tests/tests.ts',
+            'tests/**/*.spec.ts'
         ],
         preprocessors: {
-            './lib/**/*.ts': ['webpack']
+            './**/*.ts': ['webpack']
         },
         reporters: [
             'mocha'
@@ -25,7 +25,6 @@ module.exports = function (config) {
             devtool: 'source-map',
             resolve: {
                 root: [
-                    path.join(__dirname, './lib'),
                     path.join(__dirname, './node_modules')
                 ],
                 extensions: ['', '.ts', '.js', '.json']

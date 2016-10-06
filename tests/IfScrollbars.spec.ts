@@ -2,7 +2,7 @@
 
 import {Component, Renderer} from '@angular/core';
 import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from '@angular/platform-browser-dynamic/testing';
-import IfScrollbarsDirective, {directiveName} from './IfScrollbars';
+import IfScrollbarsDirective, {directiveName} from '../IfScrollbars';
 import * as _ from 'lodash';
 import mockModule from './mockModule';
 import {TestBed, ComponentFixture, async} from '@angular/core/testing';

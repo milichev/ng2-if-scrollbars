@@ -14,8 +14,8 @@
   "compileOnSave": false,
   "files": [
     "index.ts",
-    "lib/IfScrollbars.ts",
-    "lib/IfScrollbars.spec.ts"
+    "IfScrollbars.ts",
+    "tests/IfScrollbars.spec.ts"
   ],
   "exclude": [
     "node_modules"

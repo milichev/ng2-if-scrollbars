@@ -1,11 +1,10 @@
 .idea
 node_modules
 typings
-npm-debug.log
 *.ts
 !*.d.ts
-*.spec.*
-lib/mockModule.*
+tests
 karma.conf.js
 tsconfig.json
 tslint.json
+npm-debug.log

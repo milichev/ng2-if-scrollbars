@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import IfScrollbarsDirective, {getScrollState} from './lib/IfScrollbars';
+import IfScrollbarsDirective, {getScrollState} from './IfScrollbars';
 
 export {
     IfScrollbarsDirective,

@@ -35,7 +35,7 @@ Template:
 
 ```
 <div
-    [iexIfScrollbars]
+    [ng2IfScrollbars]
     style="
         height: 100px; 
         width: 200px; 
