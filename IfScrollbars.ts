@@ -1,16 +1,14 @@
 import {Directive, Input, OnDestroy, ElementRef, Renderer, AfterViewInit} from '@angular/core';
 import * as _ from 'lodash';
 
-export const directiveName = 'ng2IfScrollbars';
-
 @Directive({
-    selector: `[${directiveName}]`
+    selector: `[ng2IfScrollbars]`// tslint:disable-line:directive-selector
 })
-export default class IfScrollbarsDirective implements OnDestroy, AfterViewInit {
+class IfScrollbarsDirective implements OnDestroy, AfterViewInit {
     static verticalClassName = 'ng2-if-scrollbars-vertical';
     static horizontalClassName = 'ng2-if-scrollbars-horizontal';
 
-    @Input(directiveName) className = ''; // tslint:disable-line:no-input-rename
+    @Input('ng2IfScrollbars') className = ''; // tslint:disable-line:no-input-rename
     private destroyers: Function[] = [];
     private previous: {vertical: boolean, horizontal: boolean};
 
@@ -62,7 +60,7 @@ export default class IfScrollbarsDirective implements OnDestroy, AfterViewInit {
  * @param {Element} element
  * @returns {{vertical: boolean, horizontal: boolean}}
  */
-export function getScrollState(element: Element): {vertical: boolean, horizontal: boolean} {
+function getScrollState(element: Element): {vertical: boolean, horizontal: boolean} {
     let style = element.ownerDocument.defaultView.getComputedStyle(element, undefined);
     let horizontal = style.overflowX === 'scroll' || (style.overflowX === 'auto' && element.clientWidth < element.scrollWidth);
     let vertical = style.overflowY === 'scroll' || (style.overflowY === 'auto' && element.clientHeight < element.scrollHeight);
@@ -71,3 +69,5 @@ export function getScrollState(element: Element): {vertical: boolean, horizontal
         horizontal
     };
 }
+
+export {getScrollState, IfScrollbarsDirective}

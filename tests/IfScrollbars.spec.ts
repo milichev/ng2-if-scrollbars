@@ -2,7 +2,7 @@
 
 import {Component, Renderer} from '@angular/core';
 import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from '@angular/platform-browser-dynamic/testing';
-import IfScrollbarsDirective, {directiveName} from '../IfScrollbars';
+import {IfScrollbarsDirective} from '../IfScrollbars';
 import * as _ from 'lodash';
 import mockModule from './mockModule';
 import {TestBed, ComponentFixture, async} from '@angular/core/testing';
@@ -80,7 +80,7 @@ describe('IfScrollbars', () => {
 
         undo.push(mockModule(_, {
             debounce: jasmine.createSpy('debounce')
-                .and.callFake((fn, delay) => {
+                .and.callFake(fn => {
                     debounce = () => setTimeout(fn, 1);
                     return debounce;
                 })
@@ -104,7 +104,6 @@ describe('IfScrollbars', () => {
     });
 
     it('should declare consts', () => {
-        expect(directiveName).toBe('ng2IfScrollbars');
         expect(IfScrollbarsDirective.horizontalClassName).toBe('ng2-if-scrollbars-horizontal');
         expect(IfScrollbarsDirective.verticalClassName).toBe('ng2-if-scrollbars-vertical');
 
