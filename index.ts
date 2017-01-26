@@ -1,14 +1,15 @@
 import {NgModule} from '@angular/core';
-import IfScrollbarsDirective, {getScrollState} from './IfScrollbars';
-
-export {
-    IfScrollbarsDirective,
-    getScrollState
-};
+import {IfScrollbarsDirective, getScrollState} from './IfScrollbars';
 
 @NgModule({
     declarations: [IfScrollbarsDirective],
     exports: [IfScrollbarsDirective]
 })
-export class IfScrollbarsModule {
+class IfScrollbarsModule {
 }
+
+export {
+    IfScrollbarsDirective,
+    getScrollState,
+    IfScrollbarsModule
+};
